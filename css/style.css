@@ -54,6 +54,7 @@ header {
   background-image: url('../img/bg-banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   height: 580px;
   box-shadow: 0 4px 8px 0rgba(38, 43, 47, 0.7);
 }
@@ -138,13 +139,34 @@ section.chamada {
 }
 section.chamada .container {
   padding: 50px 0;
-  background-color: #cac289;
+  background-color: #f0e9b5;
 }
 section.chamada h2 {
   display: inline-block;
   color: #262b2f;
   font-size: 32px;
 }
+
+.flex-mosaico {
+  display: flex;
+}
+
+.item-1-mosaico {
+  background-image: url('../img/mosaico1.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 200px;
+}
+
+.item-2-mosaico {
+  width: 40%;
+  padding: 40px;
+  text-align: justify;
+
+}
+
+
 
 
 @media screen and (max-width: 960px){
