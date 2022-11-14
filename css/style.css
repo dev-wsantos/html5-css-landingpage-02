@@ -47,28 +47,33 @@ header {
 
 .cover-form {
   width: 100%;
-  padding: 0 2%;
 }
 
 .bg {
+  position:relative;
   background-image: url('../img/bg-banner.jpg');
-  background-size: cover;
-  height: 500px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 580px;
+  box-shadow: 0 4px 8px 0rgba(38, 43, 47, 0.7);
 }
 .bg:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(38, 43, 47, 0.7);
 }
 
 .form-container {
+  position: absolute;
   float: right;
   margin-right: 40px;
   width: 400px;
-  height: 115%;
+  height: calc(100% + 40px);
+  top: -3%;
+  z-index: 2;
   position: relative;
-  top: -5%;
   background-color: rgba(196, 196, 181, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(38, 43, 47, 0.7);
 }
+
 
 .form-container h2 {
   text-transform: uppercase;
@@ -97,6 +102,8 @@ header {
   height: 45px;
   line-height: 45px;
   padding-left: 10px;
+  font-size: 1.1em;
+  outline: none;
 }
 
 .form-container form input[type=submit]{
@@ -107,12 +114,69 @@ header {
   font-size: 25px;
   padding: 8px 0;
   border: 0;
-
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
 }
 
 .form-wrapper:not(:first-child) {
   margin-top: 40px;
 }
+
+.required {
+  color: tomato !important;
+  font-weight: 900;
+}
+
+.form-wrapper p {
+  font-weight: bold;
+}
+
+section.chamada {
+  text-align: center;
+  z-index: 1;
+}
+section.chamada .container {
+  padding: 50px 0;
+  background-color: #cac289;
+}
+section.chamada h2 {
+  display: inline-block;
+  color: #262b2f;
+  font-size: 32px;
+}
+
+
+@media screen and (max-width: 960px){
+  .bg {
+    text-align: center;
+  }
+
+  .form-container {
+    width: 96%;
+    max-width: 400px;
+    position: static;
+    float: none;
+    display: inline-block;
+  }
+
+  .form-container p {
+    text-align: left;
+  }
+
+  .form-container form 
+    input[type=text],
+    input[type=email],
+    input[type=tel] {
+      padding-left: 15px;
+    }
+
+  .form-wrapper:not(:first-child) {
+    margin-top: 45px;
+  }  
+}
+
+
 
 @media screen and (max-width: 510px) {
   .centro {
@@ -126,3 +190,4 @@ header {
     text-align: center;
   }
 }
+
