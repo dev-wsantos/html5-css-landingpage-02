@@ -262,7 +262,7 @@ footer img {
   }
   section.chamada h3 {
     font-size: 0.99em;
-    padding: 10px;
+    padding: 40px 80px;
   }
 
   .flex-mosaico {
@@ -293,5 +293,15 @@ footer img {
   .header {
     text-align: center;
   }
+  section.chamada h3 {
+    font-size: 0.99em;
+    padding: 40px 80;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  
+  section.chamada h3 {
+    padding: 40px 80px;
+  }
+}
