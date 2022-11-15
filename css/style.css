@@ -12,6 +12,7 @@
 
 html, body {
   height: 100%;
+  background-color: #d8cdc7;
 }
 
 .container {
@@ -27,6 +28,7 @@ html, body {
 header {
   /* background-color:#f5f0f0; */
   padding: 10px 2% 30px 2%;
+  background-color: #d8cdc7;
 }
 [class^="logo"] {
   width: 130px;
@@ -51,7 +53,7 @@ header {
 
 .bg {
   position:relative;
-  background-image: url('../img/bg-banner.jpg');
+  background-image: url('../img/bg-banner-2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -71,7 +73,7 @@ header {
   top: -3%;
   z-index: 2;
   position: relative;
-  background-color: rgba(196, 196, 181, 0.7);
+  background-color: rgba(216, 205, 199, 0.7);
   box-shadow: 0 4px 8px 0 rgba(38, 43, 47, 0.7);
 }
 
@@ -81,7 +83,7 @@ header {
   text-align: center;
   padding: 26px 0;
   color: #262b2f;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .form-container form {
@@ -108,7 +110,7 @@ header {
 }
 
 .form-container form input[type=submit]{
-  background-color:#535a58;
+  background-color:#6f503b;
   text-orientation: uppercase;
   color: #f5f0f0;
   width: 100%;
@@ -142,41 +144,89 @@ section.chamada .container {
   background-color: #f0e9b5;
 }
 section.chamada h2 {
+  width: 100%;
   display: inline-block;
   color: #262b2f;
-  font-size: 32px;
+  font-size: 1.4em;
+  margin-top: 30px;
+}
+
+section.chamada h3 {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 10px 0;
 }
 
 .flex-mosaico {
   display: flex;
 }
 
-.item-1-mosaico {
-  background-image: url('../img/mosaico1.jpg');
+.item-1-mosaico-m1, .item-1-mosaico-m2, .item-1-mosaico-m3, .item-1-mosaico-m4 {
   background-position: center;
   background-size: cover;
   width: 60%;
-  height: 200px;
+  height: 330px;
+  font-size: 1em;
 }
 
-.item-2-mosaico {
+.item-2-mosaico-m1, .item-2-mosaico-m2, .item-2-mosaico-m3, .item-2-mosaico-m4 {
   width: 40%;
-  padding: 40px;
+  padding: 25px;
   text-align: justify;
+  font-size: 17px;
+  background-color: #f0e9b5;
+}
 
+.item-1-mosaico-m1 {
+  background-image: url('../img/mosaico1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.item-1-mosaico-m2 {
+  background-image: url('../img/mosaico2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.item-1-mosaico-m3 {
+  background-image: url('../img/mosaico3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.item-1-mosaico-m4 {
+  background-image: url('../img/mosaico4.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.m2, .m4 {
+  flex-direction: row-reverse;
 }
 
 
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
 
+footer p {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #262b2f;
+}
+footer img {
+  width: 80px;
+  height: 80px;
+}
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 980px){
   .bg {
     text-align: center;
+    background-color: #f0e9b5;
   }
 
   .form-container {
     width: 96%;
     max-width: 400px;
+    margin-right:0;
     position: static;
     float: none;
     display: inline-block;
@@ -199,6 +249,36 @@ section.chamada h2 {
 }
 
 
+@media screen and (max-width: 768px){
+ 
+  section.chamada {
+    width: 100%;
+  }
+  section.chamada h2 {
+    padding-top: 7% ;
+    font-size: 1.67em;
+  }
+  section.chamada h3 {
+    font-size: 0.99em;
+    padding: 10px;
+  }
+
+  .flex-mosaico {
+    display: block;
+  }
+ 
+  .flex-mosaico .item-1-mosaico-m1, 
+  .flex-mosaico .item-1-mosaico-m2,
+  .flex-mosaico .item-1-mosaico-m3, 
+  .flex-mosaico .item-1-mosaico-m4 {
+    padding-top: 70%;
+    width: 100%;
+  }
+
+  .item-2-mosaico-m1, .item-2-mosaico-m2, .item-2-mosaico-m3, .item-2-mosaico-m4 {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 510px) {
   .centro {
