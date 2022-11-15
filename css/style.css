@@ -146,15 +146,17 @@ section.chamada .container {
 section.chamada h2 {
   width: 100%;
   display: inline-block;
-  color: #262b2f;
+  color: #262b2f; 
   font-size: 1.4em;
   margin-top: 30px;
+  font-weight: normal;
 }
 
 section.chamada h3 {
   width: 100%;
   font-size: 1.2em;
-  padding: 10px 0;
+  padding: 40px 80px;
+  font-weight: normal;
 }
 
 .flex-mosaico {
